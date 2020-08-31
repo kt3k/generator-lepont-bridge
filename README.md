@@ -1,6 +1,6 @@
 # generator-lepont-bridge v0.1.1
 
-> [Yeoman](https://yeoman.io/) generator for [LePont](https://github.com/kt3k/lepont) bridges
+> [Yeoman](https://yeoman.io/) generator for [lepont][] bridges
 
 # Usage
 
@@ -28,3 +28,4 @@ Then follow the instruction and you'll get the scaffolding of [lepont][] bridge!
 
 MIT
 
+[lepont]: https://github.com/kt3k/lepont
