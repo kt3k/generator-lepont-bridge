@@ -6,19 +6,19 @@
 
 First install yeoman and this generator.
 
-```
+```shellsession
 npm i -g yo generator-lepont-bridge
 ```
 
 Then mkdir the repo direction:
 
-```
+```shellsession
 mkdir my-lepont-bridge
 cd my-lepont-bridge
 ```
 
 Hit the generator command
-```
+```shellsession
 yo lepont-bridge
 ```
 
