@@ -1,0 +1,32 @@
+{
+  "name": "generator-lepont-bridge",
+  "version": "0.1.0",
+  "description": "yeoman generator for lepont bridges",
+  "files": [
+    "app"
+  ],
+  "scripts": {
+    "fmt": "prettier --write --no-semi --single-quote app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kt3k/generator-lepont-bridge.git"
+  },
+  "keywords": [
+    "lepont",
+    "yeoman-generator"
+  ],
+  "author": "Yoshiya Hinosawa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kt3k/generator-lepont-bridge/issues"
+  },
+  "homepage": "https://github.com/kt3k/generator-lepont-bridge#readme",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "yeoman-generator": "^4.11.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.1.1"
+  }
+}
