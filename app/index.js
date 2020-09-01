@@ -25,16 +25,16 @@ module.exports = class extends Generator {
 
     // @lepont/something -> lepont-something
     const dirName = this.props.packageName.replace(/@/g, '').replace(/\//g, '-')
-    const root = this.destinationRoot(dirName)
-
-    this.log(
-      chalk.bold(
-        `Creating the scaffold of lepont bridge into ${chalk.magenta(dirName)}.`
-      )
-    )
+    this.destinationRoot(dirName)
   }
 
   writing() {
+    const root = this.destinationRoot()
+    this.log(
+      chalk.bold(
+        `Creating the scaffold of lepont bridge into ${chalk.magenta(root)}.`
+      )
+    )
     ;[
       'README.md',
       'package.json',
