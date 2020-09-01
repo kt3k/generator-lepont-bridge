@@ -1,6 +1,6 @@
 {
   "name": "generator-lepont-bridge",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "yeoman generator for lepont bridges",
   "files": [
     "app"

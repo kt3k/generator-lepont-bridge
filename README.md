@@ -1,4 +1,4 @@
-# generator-lepont-bridge v0.2.0
+# generator-lepont-bridge v0.3.0
 
 > [Yeoman](https://yeoman.io/) generator for [lepont][] bridges
 
