@@ -3,30 +3,8 @@ const chalk = require('chalk')
 const { join } = require('path')
 
 module.exports = class extends Generator {
-  initializing() {
-    this.props = {}
-  }
-
   async prompting() {
-    this.log(
-      chalk.bold(
-        `Creating the scaffolding of lepont bridge into ${chalk.magenta(
-          'the current directory'
-        )}.`
-      )
-    )
-
-    const answer = await this.prompt({
-      type: 'confirm',
-      name: 'yes',
-      message: 'Are you sure you want to proceed?',
-    })
-
-    if (!answer.yes) {
-      this.log('Exit')
-      process.exit(1)
-      return
-    }
+    this.log(chalk.bold('Creating the scaffold of lepont bridge'))
 
     const props = await this.prompt([
       {
@@ -44,23 +22,19 @@ module.exports = class extends Generator {
     ])
 
     this.props = props
+
+    // @lepont/something -> lepont-something
+    const dirName = this.props.packageName.replace(/@/g, '').replace(/\//g, '-')
+    const root = this.destinationRoot(dirName)
+
+    this.log(
+      chalk.bold(
+        `Creating the scaffold of lepont bridge into ${chalk.magenta(dirName)}.`
+      )
+    )
   }
 
   writing() {
-    const root = this.destinationRoot()
-
-    this.fs.copyTpl(
-      this.templatePath('README.md'),
-      join(root, 'README.md'),
-      this.props
-    )
-
-    this.fs.copyTpl(
-      this.templatePath('package.json'),
-      join(root, 'package.json'),
-      this.props
-    )
-
     ;[
       'README.md',
       'package.json',

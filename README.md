@@ -10,19 +10,26 @@ First install yeoman and this generator.
 npm i -g yo generator-lepont-bridge
 ```
 
-Then mkdir the repo direction:
-
-```shellsession
-mkdir my-lepont-bridge
-cd my-lepont-bridge
-```
-
 Hit the generator command
 ```shellsession
 yo lepont-bridge
 ```
 
-Then follow the instruction and you'll get the scaffolding of [lepont][] bridge! 👍
+Then follow the instruction and you'll get the scaffolding of [lepont][] bridge! 👍 That should look like the below:
+
+```
+my-lepont-bridge
+├── README.md
+├── bridge
+│   ├── index.d.ts
+│   └── index.js
+├── package.json
+├── src
+│   ├── bridge.ts
+│   ├── index.ts
+│   └── shared.ts
+└── tsconfig.json
+```
 
 # License
 
