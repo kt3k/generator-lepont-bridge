@@ -68,6 +68,9 @@ module.exports = class extends Generator {
       '.gitignore',
       'bridge/index.d.ts',
       'bridge/index.js',
+      'src/index.ts',
+      'src/bridge.ts',
+      'src/shared.ts',
     ].forEach((filename) => {
       this.fs.copyTpl(
         this.templatePath(filename),
