@@ -11,10 +11,9 @@
   ],
   "scripts": {
     "clean": "rimraf types dist",
-    "test": "jest",
     "dist": "tsc",
     "prepublishOnly": "npm run clean && npm run dist",
-    "fmt": "prettier --write src"
+    "fmt": "prettier --write --no-semi --single-quote src"
   },
   "repository": {
     "type": "git",
