@@ -1,7 +1,7 @@
 {
   "name": "<%= packageName %>",
   "verson": "0.1.0",
-  "description": "",
+  "description": "TODO: write description",
   "main": "dist/index.js",
   "types": "./types/index.d.ts",
   "files": [
@@ -17,16 +17,16 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "TODO: write repo url"
   },
   "keywords": [
     "lepont",
     "lepont-bridge"
   ],
-  "author": "",
-  "license": "",
+  "author": "TODO: write author",
+  "license": "TODO: set license",
   "bugs": {
-    "url": ""
+    "url": "TODO: write issue url"
   },
   "homepage": "",
   "devDependencies": {

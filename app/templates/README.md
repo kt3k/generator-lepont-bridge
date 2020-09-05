@@ -1,6 +1,6 @@
 # <%= packageName %>
 
-> Description
+> TODO: write description
 
 # Install
 
@@ -37,15 +37,15 @@ On the browser side:
 ```ts
 import { api } from '<%= packageName %>'
 
-api() // TODO: TBD
+api() // TODO: write examples
 ```
 
-# API
+# APIs
 
-TBD
+TODO: document APIs
 
 # License
 
-TBD
+TODO: set license
 
 [lepont]: https://github.com/kt3k/lepont
